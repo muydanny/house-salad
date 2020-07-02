@@ -1,0 +1,10 @@
+<h3> <%= @members.length  %> Results </h3>
+
+<% @members.each do |member| %>
+  <div class="member">
+    <h6 class="name"> <%= member.name %></h6>
+    <li class="role"> <%= member.role %></li>
+    <li class="party"> <%= member.party %></li>
+    <li class="district"> <%= member.district %></li>
+  </div>
+<% end %>
