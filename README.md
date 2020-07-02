@@ -33,3 +33,6 @@ And I should see a message "7 Results"
 And I should see a list of the 7 members of the house for Colorado
 And I should see a name, role, party, and district for each member
 ```
+## Refactor Notes
+
+Using Red, Green, Refactor technique I started in the SearchController since that is where a large portion of the refactoring was needed. Since we want "skinny controllers" I started implementing what code I wish I had. By making member classes and poros I as able to condense the controller to code that follows SRP. Some bad implications are that I didnt test my poro, although I have good feature specs and POROs simply calls out objects theres nothing wrong with having a robust set of tests.
